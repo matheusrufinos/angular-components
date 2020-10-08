@@ -1,3 +1,213 @@
+<h2>Acordion Component</h2>
+<hr />
+<lib-accordion>
+  <lib-accordion-panel [title]="'Fist Item'">
+    Here's some content 'Fist Item'.
+  </lib-accordion-panel>
+
+  <lib-accordion-panel [title]="'Second Item'">
+    Here's some content 'Second Item'.
+  </lib-accordion-panel>
+
+  <lib-accordion-panel [title]="'Another item'">
+    Here's some content 'Another Item'.
+  </lib-accordion-panel>
+</lib-accordion>
+<br />
+
+<h2>Button Component</h2>
+<hr />
+<div class="row">
+  <div class="column">
+    <h3>Small</h3>
+    <lib-button [size]="'small'" [color]="'conversion'">Conversion</lib-button
+    ><br />
+    <lib-button [size]="'small'" [color]="'conversion'" [style]="'outline'"
+      >Conversion Outline</lib-button
+    >
+    <br />
+    <br />
+    <lib-button [size]="'small'" [color]="'navigation'">Navigation</lib-button
+    ><br />
+    <lib-button [size]="'small'" [color]="'navigation'" [style]="'outline'"
+      >Navigation Outline</lib-button
+    >
+  </div>
+
+  <div class="column">
+    <h3>Standard</h3>
+    <lib-button [color]="'conversion'">Conversion</lib-button><br />
+    <lib-button [color]="'conversion'" [style]="'outline'"
+      >Conversion Outline</lib-button
+    >
+    <br />
+    <br />
+    <lib-button [color]="'navigation'">Navigation</lib-button><br />
+    <lib-button [color]="'navigation'" [style]="'outline'"
+      >Navigation Outline</lib-button
+    >
+  </div>
+
+  <div class="column">
+    <h3>Large</h3>
+    <lib-button [size]="'large'" [color]="'conversion'">Conversion</lib-button
+    ><br />
+    <lib-button [size]="'large'" [color]="'conversion'" [style]="'outline'"
+      >Conversion Outline</lib-button
+    >
+    <br />
+    <br />
+    <lib-button [size]="'large'" [color]="'navigation'">Navigation</lib-button
+    ><br />
+    <lib-button [size]="'large'" [color]="'navigation'" [style]="'outline'"
+      >Navigation Outline</lib-button
+    >
+  </div>
+</div>
+
+<div class="row contrast-wrapper">
+  <div class="column">
+    <lib-button [size]="'small'" [color]="'contrast'">Contrast</lib-button
+    ><br />
+    <lib-button [size]="'small'" [color]="'contrast'" [style]="'outline'"
+      >Contrast Outline</lib-button
+    >
+  </div>
+  <div class="column">
+    <lib-button [color]="'contrast'">Contrast</lib-button><br />
+    <lib-button [color]="'contrast'" [style]="'outline'"
+      >Contrast Outline</lib-button
+    >
+  </div>
+
+  <div class="column">
+    <lib-button [size]="'large'" [color]="'contrast'">Contrast</lib-button
+    ><br />
+    <lib-button [size]="'large'" [color]="'contrast'" [style]="'outline'"
+      >Contrast Outline</lib-button
+    >
+  </div>
+</div>
+<br />
+<h2>Checkbox Component</h2>
+<hr />
+<form [formGroup]="inputForm">
+  <lib-checkbox [parent]="inputForm" [options]="checkboxOptions"></lib-checkbox>
+</form>
+
+<br />
+<h2>Radio Button Component</h2>
+<hr />
+<form [formGroup]="inputForm">
+  <lib-radio-button
+    [controlName]="'option'"
+    [parent]="inputForm"
+    [options]="radioOptions"
+  ></lib-radio-button>
+</form>
+
+<br />
+<h2>Input Component</h2>
+<hr />
+<div class="form">
+  <label for="input">Name</label>
+  <lib-input
+    [id]="'input'"
+    [formOptions]="{
+      parent: inputForm,
+      controlName: 'name'
+    }"
+    [name]="'name'"
+    [type]="'text'"
+    [placeholder]="'Tell me your name'"
+    [required]="true"
+    [iconOptions]="{
+      src: 'assets/icons/user.svg',
+      side: 'left'
+    }"
+  ></lib-input>
+</div>
+<br />
+<div class="form">
+  <label for="input2">E-mail</label>
+  <lib-input
+    [id]="'input2'"
+    [formOptions]="{
+      parent: inputForm,
+      controlName: 'email'
+    }"
+    [name]="'email'"
+    [type]="'email'"
+    [placeholder]="'Enter your best e-mail'"
+    [required]="true"
+    [iconOptions]="{
+      src: 'assets/icons/email.svg',
+      side: 'left'
+    }"
+  ></lib-input>
+</div>
+
+<br />
+<h2>Modal Component</h2>
+<hr />
+
+<lib-modal [id]="'simpleModal'">
+  <div title>Our Lorem Ipsum every day</div>
+  <div body>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac
+    fermentum diam, eu ultricies enim. Proin mollis interdum diam, sit amet
+    laoreet magna congue eu. Nulla facilisi. Mauris in nibh quis nibh placerat
+    tempus. Sed diam nulla, accumsan vel nulla at, condimentum suscipit libero.
+    Vivamus dictum lorem nec bibendum commodo. Mauris tempus suscipit purus, sit
+    amet auctor risus feugiat in. Nullam eget magna in lectus imperdiet
+    ultrices. Sed egestas mi purus, in ullamcorper sem dignissim vel. Nunc
+    vulputate aliquam viverra. Nam lectus quam, imperdiet vitae metus a, rutrum
+    aliquam metus. Aliquam tellus nisi, malesuada pretium ex sed, semper
+    pellentesque metus. Aenean lacinia dignissim tristique. Vivamus sed suscipit
+    arcu. Proin est lacus, malesuada at dolor a, aliquam iaculis justo. Mauris
+    ac condimentum erat, eu lobortis sem. Morbi nunc felis, feugiat a risus et,
+    vehicula vestibulum lorem. Maecenas tristique dui mattis diam dapibus
+    rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+    facilisi. Cras pharetra sollicitudin ante, nec feugiat urna tincidunt nec.
+    Integer vel ex tincidunt, sagittis lectus sed, dignissim leo. Cras aliquet
+    nisl id porta congue. Integer ultricies ex dapibus sem suscipit, vitae
+    tincidunt nunc consequat. Duis semper rutrum cursus. Nunc laoreet
+    consectetur leo. Donec rhoncus neque dignissim, lobortis ex eu, gravida
+    arcu. Cras porta mauris nec leo porttitor congue. Sed finibus, est nec
+    lacinia sodales, urna risus dictum elit, non pellentesque nisl arcu ac
+    tellus. Aliquam molestie et leo ut vestibulum. Duis sit amet arcu arcu.
+    Donec in nibh quis elit facilisis scelerisque eu sit amet massa. Duis
+    tristique odio ut fringilla facilisis. Nulla quis metus ut nisl tincidunt
+    blandit in nec purus. Aenean ut diam sed ligula faucibus condimentum
+    pulvinar a elit. Nulla et mauris lobortis, auctor libero vitae, lacinia est.
+  </div>
+
+  <div footer>
+    <lib-button
+      [color]="'conversion'"
+      [style]="'solid'"
+      [orientation]="'content'"
+    >
+      I understood
+    </lib-button>
+    <lib-button
+      [color]="'navigation'"
+      [style]="'outline'"
+      [orientation]="'content'"
+      >I did not understand
+    </lib-button>
+  </div>
+</lib-modal>
+<lib-button
+  [color]="'navigation'"
+  [style]="'solid'"
+  (click)="openModal('simpleModal')"
+  >Open Modal</lib-button
+>
+
+<br />
+<h2>Tabs Component</h2>
+<hr />
 <lib-tabs>
   <lib-tabs-panel tabTitle="Tab 1" iconSrc="assets/icons/user.svg">
     Here's some content.

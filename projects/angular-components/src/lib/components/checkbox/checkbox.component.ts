@@ -13,7 +13,7 @@ interface ICheckboxOptions {
 })
 export class CheckboxComponent implements OnInit {
   @Input() parent: string;
-  @Input() inline: string;
+  @Input() inline: boolean = false;
   @Input() options: ICheckboxOptions[];
 
   constructor () { }

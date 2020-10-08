@@ -1,0 +1,20 @@
+.row {
+    display: flex;
+
+    .column {
+        width: 33.33%;
+        text-align: center;
+    }
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contrast-wrapper {
+    background: var(--brand-primary);
+    width: 100%;
+    padding: 1rem 0;
+}
