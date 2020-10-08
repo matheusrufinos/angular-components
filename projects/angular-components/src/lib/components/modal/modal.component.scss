@@ -1,0 +1,125 @@
+:host {
+    display: none;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--neutral-ultra-dark);
+    opacity: 0.85;
+    z-index: 900;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .modal-body {
+        .close span {
+            font-size: 1.7rem;
+            float: right;
+            color: var(--brand-primary);
+            cursor: pointer;
+        }
+
+        h1 {
+            color: var(--neutral-ultra-dark);
+        }
+
+        background: var(--neutral-ultra-light);
+        border-radius: .5rem;
+        color: var(--neutral-ultra-dark);
+        margin: 2.5rem;
+        padding: 1.5rem 2rem 2rem 1.5rem;
+        height: max-content;
+        overflow-y: hidden;
+    }
+}
+
+.modal-title {
+    padding-top: 1.2rem;
+}
+
+.modal-content {
+    overflow-y: auto;
+    padding-right: 1rem;
+    max-height: 60vh;
+}
+
+.modal-footer {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.modal-animation {
+    animation: desktopanimation 0.4s;
+}
+
+@keyframes desktopanimation {
+    from {
+        top: -500px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .modal {
+        display: flex;
+        align-items: flex-end;
+
+        .modal-body {
+            .close span {
+                font-size: 2.2rem;
+            }
+
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            margin: 0;
+            width: 100%;
+            padding-top: .5rem;
+            padding-left: 1.4rem;
+            padding-right: 1.4rem;
+            height: max-content;
+        }
+    }
+
+    .modal-content {
+        padding-right: 1.2rem;
+    }
+
+    .modal-animation {
+        animation: mobileanimation 0.4s;
+    }
+
+    @keyframes mobileanimation {
+        from {
+            bottom: -300px;
+            opacity: 0;
+        }
+
+        to {
+            bottom: 0;
+            opacity: 1;
+        }
+    }
+}

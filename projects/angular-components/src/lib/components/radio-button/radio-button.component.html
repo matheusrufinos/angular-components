@@ -1,0 +1,17 @@
+<div [formGroup]="parent">
+  <div
+    *ngFor="let radio of options"
+    [class]="inline ? 'form-check-inline' : 'form-check'"
+  >
+    <input
+      type="radio"
+      [formControlName]="controlName"
+      [name]="controlName"
+      [id]="radio?.id"
+      [value]="radio?.value"
+    />
+    <label class="form-check-label" [for]="radio?.id">
+      {{ radio?.text }}
+    </label>
+  </div>
+</div>

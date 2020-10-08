@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    // typography
+    --font-family-primary: 'Roboto Slab', serif;
+    --font-family-secondary: 'Roboto', sans-serif;
+
+    // colors
+    --brand-primary: #83951D;
+    --brand-secondary: #465E14;
+    --brand-tertiary: #BDD299;
+    --neutral-ultra-dark: #000000;
+    --neutral-dark: #515151;
+    --neutral-medium: #878787;
+    --neutral-light: #F5F5F5;
+    --neutral-ultra-light: #FFFFFF;
+    --action-conversion-static: #09cb4b;
+    --action-conversion-hover: linear-gradient(242.18deg, #EBFF00 0%, #09CB4B 98.96%);
+    --action-conversion-disabled: #000000;
+    --action-navigation-static: #83951d;
+    --action-navigation-hover: #465d16;
+    --action-navigation-disabled: rgba(0, 0, 0, 0.16);
+    --action-contrast-static: #ffffff;
+    --action-contrast-hover: #bdd299;
+    --action-contrast-disabled: rgba(255, 255, 255, 0.24);
+    --status-success: #23b218;
+    --status-alert: #ff9700;
+    --status-error: #de1616;
+}

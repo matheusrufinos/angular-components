@@ -1,0 +1,14 @@
+<div class="form-checkbox" [formGroup]="parent">
+  <label
+    class="checkbox-container"
+    [ngClass]="inline ? 'checkbox-inline' : null"
+    *ngFor="let check of options"
+    >{{ check?.text }}
+    <input
+      type="checkbox"
+      [formControlName]="check?.controlName"
+      [id]="check?.id"
+    />
+    <span class="checkmark"></span>
+  </label>
+</div>

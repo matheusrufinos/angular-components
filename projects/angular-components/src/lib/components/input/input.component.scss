@@ -1,0 +1,69 @@
+input[type='text'],
+input[type='password'],
+input[type='tel'],
+input[type='number'],
+input[type='email'] {
+    border: 0.031rem solid var(--neutral-medium);
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    color: var(--neutral-ultra-dark);
+    outline: none;
+
+    &::placeholder {
+        color: var(--neutral-medium);
+    }
+
+    &:focus {
+        border: 0.035rem solid var(--action-navigation-static);
+        outline: none;
+    }
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+
+    img {
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        cursor: pointer;
+        margin-top: .7rem;
+    }
+
+    .icon-right {
+        right: .5rem;
+    }
+
+    .icon-left {
+        left: .5rem;
+    }
+}
+
+.icon {
+    display: inline-block;
+    font-weight: normal;
+    padding-right: 0.813rem;
+    text-rendering: auto;
+}
+
+.input-right {
+    padding-right: 2.3rem !important;
+}
+
+.input-left {
+    padding-left: 2rem !important;
+}

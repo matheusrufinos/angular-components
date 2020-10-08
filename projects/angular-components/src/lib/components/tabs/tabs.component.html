@@ -1,0 +1,19 @@
+<ul>
+  <li
+    *ngFor="let tab of tabs"
+    (click)="selectTab(tab)"
+    (mouseover)="applyStyle(tab)"
+    (mouseout)="removeStyle(tab)"
+    [class]="tab?.active ? 'active' : null"
+  >
+    <img
+      #tabIcon
+      [src]="tab?.iconSrc"
+      alt=""
+      title=""
+      [style.filter]="tab?.tabFilter"
+    />
+    {{ tab.tabTitle }}
+  </li>
+</ul>
+<ng-content></ng-content>

@@ -1,0 +1,38 @@
+ul {
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 0.063rem solid var(--neutral-medium);
+
+    li {
+        padding-left: 1rem;
+        padding-right: 2.125rem;
+        font-family: var(--font-family-primary);
+        font-weight: 400;
+        font-size: 0.875rem;
+        color: var(--neutral-dark);
+        display: inline-flex;
+        align-items: center;
+        border-bottom: 0.25rem solid transparent;
+
+        padding-bottom: 0.375rem;
+
+        img {
+            padding-right: 0.375rem;
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        &.active {
+            color: var(--action-navigation-static);
+            border-bottom: 0.25rem solid var(--action-navigation-static);
+        }
+
+        &:hover {
+            color: var(--action-navigation-hover);
+            border-bottom: 0.25rem solid var(--action-navigation-hover);
+        }
+    }
+}

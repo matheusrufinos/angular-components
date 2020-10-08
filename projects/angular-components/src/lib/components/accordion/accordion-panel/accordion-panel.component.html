@@ -1,0 +1,36 @@
+<div class="accordion">
+  <div class="accordion-head" (click)="onClick($event)">
+    <h6>{{ title }}</h6>
+    <em *ngIf="!active">
+      <svg
+        width="12"
+        height="8"
+        viewBox="0 0 12 8"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1.41 0.590149L6 5.17015L10.59 0.590149L12 2.00015L6 8.00015L0 2.00015L1.41 0.590149Z"
+          [attr.fill]="iconColor"
+        />
+      </svg>
+    </em>
+    <em *ngIf="active">
+      <svg
+        width="12"
+        height="8"
+        viewBox="0 0 12 8"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10.59 8.00012L6 3.42012L1.41 8.00012L1.23266e-07 6.59012L6 0.590122L12 6.59012L10.59 8.00012Z"
+          [attr.fill]="iconColor"
+        />
+      </svg>
+    </em>
+  </div>
+  <div class="accordion-body" [class.active]="active">
+    <ng-content></ng-content>
+  </div>
+</div>
