@@ -216,3 +216,27 @@
     And here's more in another tab.
   </lib-tabs-panel>
 </lib-tabs>
+
+<br />
+<h2>Carousel Component</h2>
+<div class="container">
+  <lib-carousel>
+    <ng-container *ngFor="let item of items">
+      <ng-container *carouselItem>
+        <div class="image-carousel-wrapper">
+          <div class="image-wrapper">
+            <img [src]="item.image" alt="" title="" />
+          </div>
+          <div class="content-wrapper">
+            <div class="texts">
+              <h2>{{ item.title }}</h2>
+              <p>
+                {{ item.description }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </ng-container>
+  </lib-carousel>
+</div>

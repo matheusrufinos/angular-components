@@ -8,6 +8,7 @@ import { LibButtonModule } from './components/button/button.module';
 import { LibModalModule } from './components/modal/modal.module';
 import { LibAccordionModule } from './components/accordion/accordion.module';
 import { LibTabsModule } from './components/tabs/tabs.module';
+import { LibCarouselModule } from './components/carousel/carousel.module';
 
 @NgModule({
   declarations: [],
@@ -20,6 +21,7 @@ import { LibTabsModule } from './components/tabs/tabs.module';
     LibModalModule,
     LibAccordionModule,
     LibTabsModule,
+    LibCarouselModule,
   ],
   exports: [
     LibInputModule,
@@ -29,6 +31,7 @@ import { LibTabsModule } from './components/tabs/tabs.module';
     LibModalModule,
     LibAccordionModule,
     LibTabsModule,
+    LibCarouselModule,
   ]
 })
 export class LibComponentsModule { }

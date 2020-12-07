@@ -6,6 +6,7 @@ export * from './lib/components/button/button.module';
 export * from './lib/components/modal/modal.module';
 export * from './lib/components/accordion/accordion.module';
 export * from './lib/components/tabs/tabs.module';
+export * from './lib/components/carousel/carousel.module';
 
 /** export all modules */
 export * from './lib/angular-components.module';
@@ -21,6 +22,7 @@ export * from './lib/components/accordion/accordion.component';
 export * from './lib/components/accordion/accordion-panel/accordion-panel.component';
 export * from './lib/components/tabs/tabs.component';
 export * from './lib/components/tabs/tabs-panel/tabs-panel.component';
+export * from './lib/components/carousel/carousel.component';
 
 /** export helpers */
 export * from './lib/helpers/hex-color.helper';

@@ -1,0 +1,79 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 100%;
+
+    .carousel-item {
+        width: 99.8%;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    animation: carouselAnimate 1s;
+}
+
+@keyframes carouselAnimate {
+    from {
+        display: none;
+        opacity: .8;
+        transform: translateX(300px);
+    }
+
+    to {
+        opacity: 1;
+        display: list-item;
+    }
+}
+
+.carousel-footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+
+    .carousel-indicators {
+        .dot {
+            background-color: var(--action-navigation-disabled);
+            border-radius: 50%;
+            display: inline-block;
+            height: .5rem;
+            margin-right: .5rem;
+            width: .5rem;
+        }
+
+        .dot.active {
+            border-radius: 2.5rem;
+            width: 1.5rem;
+            background-color: var(--action-navigation-static);
+        }
+    }
+
+    .control {
+        height: 0.75rem;
+        width: 1.125rem;
+        cursor: pointer;
+    }
+
+    .control.control-prev {
+        margin-right: 0.35rem;
+        touch-action: pan-left;
+    }
+
+    .control.control-next {
+        touch-action: pan-right;
+    }
+}
